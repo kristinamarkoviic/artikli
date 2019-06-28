@@ -36,6 +36,10 @@
           <i class="fab fa-google-plus-g"></i>
         </a>
       </li>
+      <?php
+          if(isset($_SESSION['user'])){
+              if($_SESSION['user']->idRole == 2){
+      ?>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-333" data-toggle="dropdown"
           aria-haspopup="true" aria-expanded="false">
@@ -43,11 +47,39 @@
         </a>
         <div class="dropdown-menu dropdown-menu-right dropdown-default" id="whiteMenu"
           aria-labelledby="navbarDropdownMenuLink-333">
-          <a class="dropdown-item" href="#">My profile</a>
-          <a class="dropdown-item" href="#">Log out</a>
+          <a class="dropdown-item" href="index.php?page=user">My profile</a>
+          <a class="dropdown-item" href="models/korisnici/logout.php">Log out</a>
           
         </div>
+        
       </li>
+      <?php } }
+      ?> 
+      <?php
+          if(!isset($_SESSION['user'])){
+            
+      ?>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-333" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          <i class="fas fa-sign-in-alt"></i>
+        </a>
+        <div class="dropdown-menu dropdown-menu-right dropdown-default" id="logIn"
+          aria-labelledby="navbarDropdownMenuLink-333">
+            <form id="formLog" method="POST" action="models/korisnici/login.php">
+                <label for="Email"><p class="plavo">Email</p></label>
+                <input class="inputnama" type="text" name="emaillog" id="emaillog" placeholder="Email" required/>
+                <label  for="Nama"><p class="plavo">Password</p></label>
+                <input class="inputnama" type="password" name="passlog" id="passlog" placeholder="Password" required/>
+                <button type="submit" name="btnLog" id="btnLog">LOG IN</button>
+            </form> 
+          
+          
+        </div>
+        
+      </li>
+      <?php } 
+      ?> 
     </ul>
   </div>
 </nav>
