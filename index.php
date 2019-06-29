@@ -15,6 +15,9 @@
             case 'createArticle':
                 include "views/pages/createArticle.php";
             break;
+            case 'user':
+                include "views/pages/user.php";
+            break;
         }
     }
     else {

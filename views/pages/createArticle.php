@@ -1,7 +1,9 @@
 <!-- Default form contact -->
 <div class="container-fluid" id="createA">
 <div class="row">
-<div class=" col-sm-12 col-md-6 col-lg-6" >
+<div class="col-lg-2">
+</div>
+<div class=" col-sm-12 col-md-6 col-lg-8" >
 
 <form class="text-center border border-light p-5" id="formInsert" action="models/articles/insert.php" method="post" enctype="multipart/form-data">
 
@@ -30,6 +32,8 @@
 
 </form>
 <!-- Default form contact -->
+</div>
+<div class="col-lg-2">
 </div>
 </div>
 </div>

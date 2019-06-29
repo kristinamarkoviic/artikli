@@ -11,4 +11,8 @@
         echo $ex->getMessage();
     }
 
+    function executeQuery($upit){
+        global $conn;
+        return $conn->query($upit)->fetchAll();
+    }
 ?>

@@ -67,6 +67,30 @@ padding:2px;
 #formLog {
     padding:10px;
 }
+#userArticles {
+    height: 600px;
+    width:100%;
+    background-color:#bbb7b7;
+}
+.oneMyArticle {
+    margin-top:10px;
+    margin-bottom:10px;
+    width:auto;
+    height:100px;
+    background-color:rgba(255, 252, 252, 0.596);
+}
+.oneMyArticle img {
+    width:100px;
+    height:100px;
+}
+#formUpdate {
+    height: 600px;
+    width:100%;
+    background-color:#bbb7b7;
+}
+#allMyArticles {
+    margin-top:10px;
+}
 #createA {
     width:100%;
     height: 600px;
@@ -197,9 +221,16 @@ h2{font-family:'Varela',sans-serif}
 .middlebar_content_inner{border-left:1px solid #bebebd; border-right:1px solid #bebebd; display:inline; float:left; padding:25px 15px 20px; width:100%}
 .middlebar_nav{padding:0; margin:0}
 .middlebar_nav li{display:block; float:left; margin-bottom:15px; width:100%}
-.mbar_thubnail{display:block; float:left; height:auto; margin-right:10px; width:30%}
+.mbar_thubnail{display:block; float:left; height:auto; margin-right:5px; width:30%}
 .mbar_thubnail > img{max-width:100%}
-.mbar_title{color:#666; display:inline-block; float:left; font-size:15px; margin-top:5px; width:65%}
+.mbar_title{
+    color:#666;
+    display:inline-block;
+    font-size:15px;
+    margin-top:5px;
+    width:65%
+}
+.mbar_titlep{color:#666; display:inline-block; float:left; font-size:12px; margin:0px; width:65%}
 .popular_categori{float:left; display:inline; width:100%; border-left:1px solid #bebebd; border-right:1px solid #bebebd}
 .popular_categori > h2{border-bottom:1px solid #e3e3e3; border-top:1px solid #e3e3e3; color:#fff; float:left; font-size:16px; font-weight:bold; line-height:32px; margin:0; padding:5px 25px; width:100%}
 .poplr_catgnva{float:left; padding:20px 15px; width:100%}
