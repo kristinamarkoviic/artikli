@@ -67,6 +67,14 @@ padding:2px;
 #formLog {
     padding:10px;
 }
+#createA {
+    width:100%;
+    height: 600px;
+}
+#formInsert {
+    margin:5px;
+    background-color: #8474A1;
+}
 #formLog input[type=text] {
     padding:5px;
     outline:0px;

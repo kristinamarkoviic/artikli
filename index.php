@@ -12,8 +12,8 @@
             case 'home':
                 include "views/pages/home.php";
             break;
-            case 'login':
-                include "views/pages/login.php";
+            case 'createArticle':
+                include "views/pages/createArticle.php";
             break;
         }
     }

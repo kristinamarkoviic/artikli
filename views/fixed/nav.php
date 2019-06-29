@@ -12,11 +12,15 @@
   </button>
   <div class="collapse navbar-collapse" id="navbarSupportedContent-333">
     <ul class="navbar-nav mr-auto">
-      <!-- <li class="nav-item active">
-        <a class="nav-link" href="index.php?page=pocetna">Home
-          <span class="sr-only">(current)</span>
+      <li class="nav-item active">
+        <?php
+          if(isset($_SESSION['user'])){
+            
+        ?>
+        <a class="nav-link" href="index.php?page=createArticle">Create Article
+        <?php  } ?> 
         </a>
-      </li> -->
+      </li>
       
       
     </ul>
