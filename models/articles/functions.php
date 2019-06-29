@@ -7,7 +7,7 @@ function insert($title,$desc,$date,$original_cover,$new_cover,$idUser){
     return $uneto;
 }
 function all_articles($idUser){
-    $upit = "SELECT * FROM articles WHERE idUser = $idUser";
+    $upit = "SELECT a.* FROM articles a INNER JOIN users u ON a.idUser = u.idUser WHERE a.idUser = $idUser ";
     return executeQuery($upit);
 }
 function all(){
@@ -17,6 +17,11 @@ function all(){
 function delete_article($idArticle){
     $upit="DELETE FROM articles WHERE idArticle = ? ";
     global $conn;
-    $priprema=$conn->prepare($upit);
+    $priprema = $conn->prepare($upit);
     return $priprema->execute([$idArticle]);
+}
+function get_one($idArticle){
+    $upit="SELECT * FROM articles WHERE idArticle = $idArticle ";
+    global $conn;
+    return $conn->query($upit)->fetch();
 }
